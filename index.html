@@ -290,7 +290,7 @@
     <div class="eyebrow"><span class="dot"></span> verbatim · non-lossy · fully attributed</div>
     <h1 class="title">Diffusion <em>vs.</em> Ballistics</h1>
     <div class="dyad"><span class="atl">o)–(o&nbsp;ATL</span><span>·</span><span class="dbx">[====]&nbsp;DBX</span><span>·</span><span>tiki-taka</span><span>·</span><span>SGD</span><span>·</span><span>the scouting sugar ant</span></div>
-    <p class="dek">A five-voice roundtable — the same question routed through xAI, Google, OpenAI, and Anthropic, then re-litigated by Ukubona across three rounds of pushback — tracking a passenger's trace through two airport topologies to ask what, structurally, Spain's 2008–2012 tiki-taka actually was.</p>
+    <p class="dek">A five-voice roundtable — the same question routed through xAI, Google, OpenAI, and Anthropic, then re-litigated by Ukubona across three rounds of pushback — tracking a passenger's trace through two airport topologies to ask what, structurally, Spain's 2008–2012 tiki-taka actually was. Closes with an unlikely addendum: distillation, alcoholic and algorithmic, as the hinge between the two regimes.</p>
     <div class="legend">
       <span class="legend-chip"><span class="sw" style="background:var(--amber)"></span>xAI</span>
       <span class="legend-chip"><span class="sw" style="background:var(--blue)"></span>Google</span>
@@ -663,6 +663,75 @@ o-o-o</pre>
         <li><strong>Ukubona's own architecture</strong>: append-only NDJSON <em>is</em> diffusive by design — nothing is overwritten, every state is reachable by replaying forward, and even "reversal" is just appending a new event rather than deleting the old one. No database ever built in your stack has a Plane Train in it. That's not incidental — it's the same commitment your Okubala si Kulaba framework makes at the infrastructure level that tiki-taka makes at the possession level: never destroy the option to go back.</li>
       </ul>
       <p class="closer">Diffusion vs. Ballistics might be the sharper pentadic pair than o)-(o vs [====] ever was — the airports were props, this is the actual eigenmode.</p>
+    </div>
+  </article>
+
+  <div class="thread-label">Unlikely addendum — the still as hinge</div>
+
+  <!-- ============ Ukubona: addendum request ============ -->
+  <article class="turn ukubona">
+    <div class="turn-head">
+      <div class="voice"><span class="dot"></span><div><div class="voice-name">Ukubona</div><div class="voice-role">source material: OpenAI, on distillation</div></div></div>
+      <div class="turn-idx">11</div>
+    </div>
+    <div class="turn-body">
+      <p>You think you could do an "unlikely addendum" using this material — a separate OpenAI thread on the original motivation of distillation, both machine-learning (Hinton/Vinyals/Dean, dark knowledge, soft targets) and the older sense, alcohol distillation (fermented mixture → vapor → condensation → concentrated spirit; large model → soft outputs → student model → compressed intelligence). In both cases the bulk substrate is discarded and the volatile/invariant component is retained. The ancient intuition: "there is a spirit hidden in the mixture; find the part that rises." The modern version: "there is structure hidden in the high-dimensional representation; find the invariant manifold." Different centuries, same metaphor: distillation is the search for what survives transformation.</p>
+    </div>
+  </article>
+
+  <!-- ============ Anthropic: the hinge ============ -->
+  <article class="turn anthropic">
+    <div class="turn-head">
+      <div class="voice"><span class="dot"></span><div><div class="voice-name">Anthropic</div><div class="voice-role">the still as hinge</div></div></div>
+      <div class="turn-idx">12</div>
+    </div>
+    <div class="turn-body">
+      <p>Yeah — this is a good one, because distillation (either kind) isn't purely diffusive or purely ballistic. It's the mechanism that turns one into the other. That's the unlikely part: it's not a third example for the table, it's the hinge the whole table was missing.</p>
+
+      <h3>The still as hinge</h3>
+      <p>Run the two chains side by side, on the axis already built:</p>
+      <table class="map">
+        <tr><th>Phase</th><th>Regime</th><th>Why</th></tr>
+        <tr><td>Fermentation / vat</td><td><strong>Diffusion</strong></td><td>Molecules collide randomly, no net drift, reversible — a yeast culture doesn't "decide" anything, it just explores concentration space until equilibrium</td></tr>
+        <tr><td>The neck of the still</td><td><strong>Ballistics</strong></td><td>Once vapor rises past the boiling point of ethanol, there's no backtrack — P(reverse) drops to ~0, drift dominates, it's launched</td></tr>
+        <tr><td>Condensation</td><td><strong>New basin</strong></td><td>The vapor collapses into a smaller, denser, less ambiguous liquid — a new resting state, not the old one</td></tr>
+      </table>
+
+      <p>Machine-learning distillation runs the identical sequence, just with different nouns:</p>
+      <table class="map">
+        <tr><th>Phase</th><th>Regime</th><th>Why</th></tr>
+        <tr><td>Teacher network's internal representation</td><td><strong>Diffusion</strong></td><td>High-dimensional, soft, undecided — "golden retriever 0.51 / labrador 0.45" is a distribution still wandering, not yet committed</td></tr>
+        <tr><td>Softmax temperature → distillation loss</td><td><strong>Ballistics</strong></td><td>The moment you force the teacher's ambiguity through a fixed target and optimize the student toward it, you've launched — the student can't retreat into the teacher's uncertainty, only inherit its shape</td></tr>
+        <tr><td>Deployed student model</td><td><strong>New basin</strong></td><td>Cheap, fast, single-answer, no wandering — an argmax, not a distribution. DBX-shaped, not ATL-shaped.</td></tr>
+      </table>
+
+      <h3>The unlikely part</h3>
+      <p>Both the doc's own metaphors already say this without noticing: <em>"the spirit leaves the body of the liquid"</em> and <em>"the answer is hidden in the way it hesitates."</em> Both are describing the same event — the moment diffusion (hesitation, ambiguity, the soft distribution) gets forced through a one-way channel and comes out the other side as something that can no longer hesitate. That channel — the still's neck, the softmax collapse, the Plane Train, Fàbregas — is structurally the same object every time it shows up in this whole conversation. It's not a bottleneck that <em>destroys</em> information, the way the roundtable first assumed. It's the specific device that <strong>converts reversible structure into irreversible product</strong>, and the thing worth noticing is that <em>what survives the conversion is never the substrate</em> — it's the invariant that was hiding inside the substrate's hesitation. The "dark knowledge" in a softened probability and the "spirit" in a fermented mash are the same claim wearing two centuries of vocabulary: the interesting part of a diffusive system was never its bulk, it was the shape of its wobble.</p>
+      <p class="closer">Okubala si Kulaba — the mash and the mixture both look the same before the fire; only the vapor tells you what was worth keeping.</p>
+    </div>
+  </article>
+
+  <!-- ============ Ukubona: Yass ============ -->
+  <article class="turn ukubona">
+    <div class="turn-head">
+      <div class="voice"><span class="dot"></span><div><div class="voice-name">Ukubona</div><div class="voice-role">"Yass!!"</div></div></div>
+      <div class="turn-idx">13</div>
+    </div>
+    <div class="turn-body">
+      <p>Yass!! Very compelling how you're framing it ans hte hinge</p>
+    </div>
+  </article>
+
+  <!-- ============ Anthropic: the roundtable distills itself ============ -->
+  <article class="turn anthropic">
+    <div class="turn-head">
+      <div class="voice"><span class="dot"></span><div><div class="voice-name">Anthropic</div><div class="voice-role">the roundtable distills itself</div></div></div>
+      <div class="turn-idx">14</div>
+    </div>
+    <div class="turn-body">
+      <p>Right — and it's the kind of hinge that makes the whole roundtable's earlier disagreement look like it was arguing about the wrong layer the whole time. xAI vs. Google vs. OpenAI vs. Anthropic were all fighting over whether ATL or DBX <em>was</em> tiki-taka. But the still says neither airport is the phenomenon — the airport is just wherever you happen to catch the process mid-flight. Diffusion and ballistics aren't two competing answers, they're two <em>phases</em> of one transformation, and the interesting object was always the neck connecting them, not either side of it.</p>
+      <p>That also quietly explains why distillation felt so natural to fold in here even though nobody asked for it: the roundtable itself was diffusive (four voices, soft disagreement, revisable positions) until your "Diffusion vs. Ballistics. Yo!" forced it through a neck and it condensed into one phrase. The conversation distilled itself.</p>
+      <p class="closer">Okubala si Kulaba — the mixture argued with itself for ten turns; the still only needed one.</p>
     </div>
   </article>
 
