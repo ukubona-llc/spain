@@ -214,6 +214,24 @@
     padding-top:14px; margin-top:6px; border-top:1px dashed var(--rule);
   }
 
+    /* ---------- video embed ---------- */
+  .video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 22px 0;
+    border-radius: 10px;
+    background: var(--mono-bg);
+    border: 1px solid var(--rule);
+  }
+  .video-embed iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+
   /* voice accent variants */
   .turn.xai .turn-head, .turn.xai .voice .dot{ background:none; }
   .turn.xai{ }
@@ -478,6 +496,10 @@ o-o-o
 |/|\|
 o-o-o</pre>
       <p>Dense local connectivity. Multiple neighboring options. Every player has 3–5 short passes. Like a lattice. Or… like ants.</p>
+
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/PZZqRjlLsN0?start=284" title="Thierry Henry Tiki-Taka Analysis" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
       <h3>VI. Sugar ants</h3>
       <p>This is the strongest analogy in your whole prompt. A scout ant doesn't know the optimal path. It performs Brownian exploration.</p>
